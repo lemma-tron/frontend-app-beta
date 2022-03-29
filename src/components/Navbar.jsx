@@ -49,7 +49,7 @@ const Navbar = () => {
     <>
       <nav className="flex gap-10 justify-between lg:justify-start items-center w-full h-14 bg-midnight md:p-10 p-5">
         {/* LogoContainer */}
-        <div className='w-16'>
+        <div className='w-10 md:w-16'>
           <img src={logo} alt="logo" className="w-full h-full object-cover" />
         </div>
 

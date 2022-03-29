@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div className='w-full relative min-h-screen flex flex-col items-center bg-midnight md:px-10 pt-8'>
 
-        {isConnected === null && <Warning />}
+        {isConnected === false && <Warning />}
 
         {/* Title */}
         <div className='w-full flex flex-col md:flex-row justify-between items-center'>

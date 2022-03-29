@@ -58,7 +58,8 @@ body {
 
 /* Custom Scroll */
 ::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.2em;
+  height: 0.2em;
 }
 
 ::-webkit-scrollbar-track {
