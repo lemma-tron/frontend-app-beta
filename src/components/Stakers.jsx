@@ -85,7 +85,7 @@ const Stakers = () => {
                 <div className='w-full flex justify-between'>
                     <h1 className='text-3xl font-bold text-gradient uppercase'>become a validator</h1>
                     <div className='rounded-full w-6 h-6 bg-night flex items-center justify-center'>
-                        <RiQuestionMark className='text-primary' onClick={() => setOpen(true)}/>
+                        <RiQuestionMark className='text-midnight' onClick={() => setOpen(true)}/>
                     </div>
                 </div>
                 <div className='w-full my-4 bg-night rounded p-4 overflow-x-auto'>
