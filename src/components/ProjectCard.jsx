@@ -41,16 +41,16 @@ const ProjectCard = () => {
         navigate('/project/1')
     }
   return (
-    <div className='w-11/12 md:w-full flex flex-col sm:flex-row justify-center flex-wrap gap-5 my-4'>
+    <div className='w-11/12 md:w-full flex flex-col sm:flex-row justify-start flex-wrap gap-5 my-4'>
         {data.map((project, index) => (
-            <div className='flex flex-col md:flex-row md:w-[320px] lg:w-[450px] md:h-[220px] rounded bg-night p-5' key={index} onClick={handleNavigate}>
+            <div className='flex flex-col md:w-[45%] lg:flex-row lg:w-[450px] lg:h-[220px] rounded bg-night p-5' key={index} onClick={handleNavigate}>
                 {/* Image */}
-                <img className='flex-0.5 w-full h-36 md:w-36 md:h-full object-cover rounded' src={project.coverImg} alt="CoverImage"/>
+                <img className='flex-0.5 w-full h-36 lg:w-36 lg:h-full object-cover rounded' src={project.coverImg} alt="CoverImage"/>
 
                 {/* Details and Social */}
-                <div className='w-full flex flex-col py-4 md:py-0 lg:flex-row justify-between'>
+                <div className='w-full flex flex-col py-4 lg:py-0 lg:flex-row justify-between'>
                     {/* Details */}
-                    <div className='md:flex-1 w-full flex flex-col items-center md:justify-between md:items-start md:mx-3'>
+                    <div className='lg:flex-1 w-full flex flex-col items-center lg:justify-between lg:items-start lg:mx-3'>
                         {/* ProjectTitle */}
                         <div>
                             <h1 className='text-xl font-semibold text-white'>{project.title}</h1>

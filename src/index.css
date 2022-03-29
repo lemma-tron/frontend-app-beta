@@ -49,8 +49,8 @@ body {
 /* white glassmorphism */
 .white-glassmorphism {
   border-radius: 16px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(97, 189, 255, 0.3);
   opacity: 1;
   background: rgba(236, 236, 236, 0.136);
