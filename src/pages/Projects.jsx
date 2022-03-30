@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import Warning from '../components/Warning'
 
 const Projects = () => {
-  const [isConnected, setIsConnected] = useState(false);
+  // const [isConnected, setIsConnected] = useState(false);
+  const isConnected = false;
 
   return (
     <div className='w-full relative min-h-screen flex flex-col items-center bg-midnight md:px-10 pt-8'>
