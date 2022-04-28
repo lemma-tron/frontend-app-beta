@@ -8,6 +8,7 @@ import ProjectDetail from './pages/ProjectDetail';
 const App = () => {
 
   return (
+    <div className='w-full lg:w-[88%] bg-midnight my-0 mx-auto'>
       <Router>
         <Navbar />  
         <Routes>
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/project/:id' element={<ProjectDetail />} />
         </Routes>
       </Router>
+    </div>
   );
 }
 

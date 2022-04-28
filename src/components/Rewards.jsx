@@ -1,8 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Spinner from '../assets/icons/Spinner'
 
 const Rewards = () => {
     const [reward, setReward] = useState(false);
+
+    const unusedFunction = () => {
+        setReward(false);
+    }
+    
+    useEffect(() => {
+      unusedFunction();
+    }, [])
+    
 
     return (
         <div className='w-full pt-8 px-4 flex flex-col items-center md:items-start'>

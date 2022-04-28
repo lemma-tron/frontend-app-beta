@@ -41,7 +41,7 @@ const ProjectCard = () => {
         navigate('/project/1')
     }
   return (
-    <div className='w-11/12 md:w-full flex flex-col sm:flex-row justify-start flex-wrap gap-5 my-4'>
+    <div className='w-11/12 md:w-full flex flex-col sm:flex-row justify-start flex-wrap gap-4 my-4'>
         {data.map((project, index) => (
             <div className='flex flex-col md:w-[45%] lg:flex-row lg:w-[450px] lg:h-[220px] rounded bg-night p-5' key={index} onClick={handleNavigate}>
                 {/* Image */}

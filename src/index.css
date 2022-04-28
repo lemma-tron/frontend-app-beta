@@ -17,8 +17,8 @@ body {
 /* Custom stylings */
 .text-gradient {
   background-color: rgba(140,227,255,1);
-  background-image: linear-gradient(146deg, rgba(140,227,255,1) 0%, rgb(37, 192, 253) 100%);
-  background-image: conic-gradient(146deg, rgba(140,227,255,1) 0%, rgb(37, 192, 253) 100%);
+  background-image: linear-gradient(146deg, #0DB2FF 0%, rgb(37, 192, 253) 100%);
+  background-image: conic-gradient(146deg, #0DB2FF 0%, rgb(37, 192, 253) 100%);
 
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -27,10 +27,10 @@ body {
 }
 
 .gradient-bg { 
-  background: linear-gradient(146deg,rgba(140,227,255,1) 0%, rgb(54, 195, 251) 100%);
+  background: linear-gradient(146deg, rgb(54, 195, 251) 0%, #0DB2FF 100%);
 }
 .gradient-box {
-  background: linear-gradient(180deg,rgb(177, 235, 255) 0%, rgb(54, 195, 251) 100%);
+  background: linear-gradient(180deg, rgb(54, 195, 251) 0%, #0DB2FF 100%);
 }
 .black-gradient-bg {
   background: rgb(15,17,35);
@@ -49,11 +49,7 @@ body {
 /* white glassmorphism */
 .white-glassmorphism {
   border-radius: 16px;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(97, 189, 255, 0.3);
-  opacity: 1;
-  background: rgba(236, 236, 236, 0.136);
+  background-color: #0f112381;
 }
 
 /* Custom Scroll */
@@ -67,14 +63,20 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4ACAFC;
+  background: #0DB2FF;
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #85dcff;
+  background: #32bbfa;
 }
 
+@supports (scrollbar-color: red blue) {
+  *{
+      scrollbar-width: thin;
+      scrollbar-color: #0DB2FF #0F1123;
+  }
+}
 
 
 @tailwind base;

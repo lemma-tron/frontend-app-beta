@@ -94,28 +94,30 @@ const Navbar = () => {
           {
             toggleMenu &&
             (
-              <div className='h-screen w-full md:w-[50vw] fixed z-10 top-0 -right-2 p-3 pr-8 white-glassmorphism flex flex-col items-end animate-slide-in'>
-                <Hamburger toggled={toggleMenu} toggle={setToggleMenu}/>
-                <ul className='w-full flex flex-col list-none my-14 items-start gap-y-4'>
-                  <li className={handleActiveResponsive('/')}><Link to='/'>Projects</Link></li>
-                  <li className={handleActiveResponsive('/stakes')}><Link to='/stakes'>Stake</Link></li>
-                </ul>
+              <div className='h-screen w-full fixed z-10 top-0 -right-2 px-3 bg-[#0f112381] backdrop-blur-md flex flex-col items-end'>
+                <div className='w-11/12 md:w-1/2 h-screen bg-midnight flex flex-col items-end px-8 py-4 animate-slide-in'>
+                  <Hamburger toggled={toggleMenu} toggle={setToggleMenu}/>
+                  <ul className='w-full flex flex-col list-none my-14 items-start gap-y-4'>
+                    <li className={handleActiveResponsive('/')}><Link to='/'>Projects</Link></li>
+                    <li className={handleActiveResponsive('/stakes')}><Link to='/stakes'>Stake</Link></li>
+                  </ul>
 
-                {/* Connect */}                
-                {
-                  !isConnected ? 
-                  (
-                    <div className='w-full text-center py-2 border-2 border-primary rounded bg-transparent text-primary' onClick={() => setOpen(true)}>
-                        CONNECT
-                    </div>
-                  )
-                  :
-                  (
-                    <div className='w-full text-center py-2 border-2 border-primary rounded bg-transparent text-primary'>
-                        DISCONNECT
-                    </div>
-                  )
-                }
+                  {/* Connect */}                
+                  {
+                    !isConnected ? 
+                    (
+                      <div className='w-full text-center py-2 border-2 border-primary rounded bg-transparent text-primary' onClick={() => setOpen(true)}>
+                          CONNECT
+                      </div>
+                    )
+                    :
+                    (
+                      <div className='w-full text-center py-2 border-2 border-primary rounded bg-transparent text-primary'>
+                          DISCONNECT
+                      </div>
+                    )
+                  }
+                </div>
               </div>
             )
           }
